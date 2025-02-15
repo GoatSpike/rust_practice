@@ -9,4 +9,19 @@ fn main() {
     // let mut writer = BufWriter::new(stdout.lock());
     // say(&message, width, &mut writer).unwrap();
     println!("Hello, world!");
+    let x = 5;
+    println!("The value of x is: {}", x);
+
+    sec2();
+}
+
+fn sec2() {
+    let space = " ";
+    let space = space.len();
+
+    println!("space: {}", space);
+
+    // let mut spaces = "    ";
+    // spaces = spaces.len();
+    // println!("spaces: {}", spaces);
 }
