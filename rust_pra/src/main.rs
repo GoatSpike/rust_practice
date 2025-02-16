@@ -4,6 +4,10 @@ fn main() {
     sec3();
 
     sec4();
+
+    sec5();
+
+    sec6();
 }
 
 fn sec3() {
@@ -100,4 +104,92 @@ fn sec4() {
     let s4 = s3.clone();
 
     println!("s3: {}!, s4: {}", s3, s4);
+}
+
+#[derive(Debug)]
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+    active: bool,
+}
+
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
+}
+
+
+
+fn sec5() {
+    let mut user1 = User {
+        email: String::from("someone@ex.com"),  
+        username: String::from("someone"),
+        active: true,
+        sign_in_count: 1,
+    };
+
+    user1.email = String::from("change@ex.com");
+    println!("user1 {:?}", user1);
+
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+
+    println!("rect1: {:?}", rect1);
+    println!("rect1 area: {}", rect1.area());
+
+    let rect2 = Rectangle {
+        width: 10,
+        height: 40,
+    };
+
+    let rect3 = Rectangle {
+        width: 60,
+        height: 45,
+    };
+    println!("rect1 can hold rect2: {}", rect1.can_hold(&rect2));
+    println!("rect1 can hold rect3: {}", rect1.can_hold(&rect3));
+}
+
+#[derive(Debug)]
+enum IpAddrKind {
+    V4,
+    V6,
+}
+
+#[derive(Debug)]
+struct IpAddr {
+    kind: IpAddrKind,
+    address: String,
+}
+
+fn sec6() {
+    let four = IpAddrKind::V4;
+    let six = IpAddrKind::V6;
+
+    println!("four: {:?}, six: {:?}", four, six);
+
+    let home = IpAddr {
+        kind: IpAddrKind::V4,
+        address: String::from("127.0.0.1"),
+    };
+
+    let loopback = IpAddr {
+        kind: IpAddrKind::V6,
+        address: String::from("::1"),
+    };
+    println!("home: {:?}, loopback: {:?}", home, loopback);
 }
