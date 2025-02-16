@@ -15,4 +15,12 @@ fn main() {
   } else {
     println!("4");
   }
+// match文を使うことで、コードをより簡潔にすることができます。
+//   let result = match (s1.as_str(), s2.as_str()) {
+//     ("sick", "sick") => 1,
+//     ("sick", "fine") => 2,
+//     ("fine", "sick") => 3,
+//     _ => 4,
+//   };
+// println!("{}", result);
 }

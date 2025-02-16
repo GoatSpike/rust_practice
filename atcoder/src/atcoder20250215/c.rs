@@ -6,6 +6,8 @@ fn main() {
     input! {
         _n: usize,  // N は使わないので、変数名として _n に変更
         m: usize,   // M を snake_case に変更
+        // edges という名前のタプルのベクターを読み込んでいます。
+        // 各タプルは2つの usize 型の値を持ち、m 個のタプルが含まれています。
         edges: [(usize, usize); m],
     }
 

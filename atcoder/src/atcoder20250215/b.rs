@@ -7,6 +7,8 @@ fn main() {
     }
 
     let n = s.len();
+    // このコードは、文字列 s を Vec<char> に変換しています。
+    // これは、文字列を個々の文字に分割してベクターに格納するために使用されます。
     let chars: Vec<char> = s.chars().collect();
     let mut count = 0;
 
