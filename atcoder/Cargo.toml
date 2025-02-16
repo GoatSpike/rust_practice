@@ -1,0 +1,7 @@
+[package]
+name = "atcoder"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+protoconio = "0.4.5"

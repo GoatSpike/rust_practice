@@ -90,4 +90,14 @@ fn sec4() {
     s.push_str(", world!");
 
     println!("s: {}", s);
+
+    let s1 = String::from("value1");
+    let s2 = s1;
+
+    println!("s1: {}, world!", s2);
+
+    let s3 = String::from("value3");
+    let s4 = s3.clone();
+
+    println!("s3: {}!, s4: {}", s3, s4);
 }
