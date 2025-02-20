@@ -1,5 +1,6 @@
 fn main() {
     let n = 15;
+    // This is the same as the snippet from atcoder/src/leetcode/412.rs
     let results: Vec<String> = (1..=n)
         .map(|i| {
             if i % 3 == 0 && i % 5 == 0 {
