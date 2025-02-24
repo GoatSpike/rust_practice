@@ -4,6 +4,7 @@ fn main() {
     // 入力を受け取る
     input! {
         n: usize,
+        // これは配列を受け取る
         mut s: [String; n],
     }
 
