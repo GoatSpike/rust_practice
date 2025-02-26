@@ -8,6 +8,7 @@ fn main() {
 
     // 文字列を文字のベクタに変換
     let mut chars: Vec<char> = s.chars().collect();
+    // インデックスを初期化
     let mut i = 0;
 
     // 文字列を走査して特定のパターンを置換
