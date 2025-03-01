@@ -1,5 +1,5 @@
-cargo:include=/Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/brotli-sys-0.3.2/brotli/include
-OUT_DIR = Some(/Users/yagisawahodaka/Documents/Practice/rust_practice/rust_pra/src/actix-gcd/target/debug/build/brotli-sys-b8c04ed14e371556/out)
+cargo:include=/Users/goat/.cargo/registry/src/index.crates.io-6f17d22bba15001f/brotli-sys-0.3.2/brotli/include
+OUT_DIR = Some(/Users/goat/Documents/Work/rust_practice/rust_pra/src/actix-gcd/target/debug/build/brotli-sys-b8c04ed14e371556/out)
 OPT_LEVEL = Some(0)
 TARGET = Some(aarch64-apple-darwin)
 HOST = Some(aarch64-apple-darwin)
@@ -44,4 +44,4 @@ ARFLAGS_aarch64_apple_darwin = None
 cargo:rerun-if-env-changed=ARFLAGS_aarch64-apple-darwin
 ARFLAGS_aarch64-apple-darwin = None
 cargo:rustc-link-lib=static=brotli
-cargo:rustc-link-search=native=/Users/yagisawahodaka/Documents/Practice/rust_practice/rust_pra/src/actix-gcd/target/debug/build/brotli-sys-b8c04ed14e371556/out
+cargo:rustc-link-search=native=/Users/goat/Documents/Work/rust_practice/rust_pra/src/actix-gcd/target/debug/build/brotli-sys-b8c04ed14e371556/out
