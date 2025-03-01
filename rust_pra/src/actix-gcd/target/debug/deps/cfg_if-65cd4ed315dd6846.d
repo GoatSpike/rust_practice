@@ -1,0 +1,7 @@
+/Users/yagisawahodaka/Documents/Practice/rust_practice/rust_pra/src/actix-gcd/target/debug/deps/libcfg_if-65cd4ed315dd6846.rmeta: /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cfg-if-0.1.10/src/lib.rs
+
+/Users/yagisawahodaka/Documents/Practice/rust_practice/rust_pra/src/actix-gcd/target/debug/deps/libcfg_if-65cd4ed315dd6846.rlib: /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cfg-if-0.1.10/src/lib.rs
+
+/Users/yagisawahodaka/Documents/Practice/rust_practice/rust_pra/src/actix-gcd/target/debug/deps/cfg_if-65cd4ed315dd6846.d: /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cfg-if-0.1.10/src/lib.rs
+
+/Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cfg-if-0.1.10/src/lib.rs:

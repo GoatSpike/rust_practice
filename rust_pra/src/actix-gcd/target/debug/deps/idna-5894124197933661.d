@@ -1,0 +1,10 @@
+/Users/yagisawahodaka/Documents/Practice/rust_practice/rust_pra/src/actix-gcd/target/debug/deps/libidna-5894124197933661.rmeta: /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/lib.rs /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/punycode.rs /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/uts46.rs /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/uts46_mapping_table.rs
+
+/Users/yagisawahodaka/Documents/Practice/rust_practice/rust_pra/src/actix-gcd/target/debug/deps/libidna-5894124197933661.rlib: /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/lib.rs /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/punycode.rs /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/uts46.rs /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/uts46_mapping_table.rs
+
+/Users/yagisawahodaka/Documents/Practice/rust_practice/rust_pra/src/actix-gcd/target/debug/deps/idna-5894124197933661.d: /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/lib.rs /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/punycode.rs /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/uts46.rs /Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/uts46_mapping_table.rs
+
+/Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/lib.rs:
+/Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/punycode.rs:
+/Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/uts46.rs:
+/Users/yagisawahodaka/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.1.5/src/uts46_mapping_table.rs:
