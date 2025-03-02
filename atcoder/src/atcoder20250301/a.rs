@@ -2,8 +2,15 @@ use proconio::input;
 
 fn main() {
     input! {
-        a: i32,
-        b: i32,
+        n: usize,
+        numbers: [i32; n],
     }
-    println!("{}", a + b);
+
+    for i in 0..n-1 {
+        if numbers[i] >= numbers[i+1] {
+          println!("No");
+          return;
+        }
+    }
+    println!("Yes");
 }
