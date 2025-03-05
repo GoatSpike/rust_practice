@@ -15,6 +15,7 @@ fn main() {
         std::process::exit(1);
     }
 
+    // bouds
     let bounds = parse_pair(&args[2], 'x').expect("error parsing image dimensions");
     let upper_left = parse_complex(&args[3]).expect("error parsing upper left corner point");
     let lower_right = parse_complex(&args[4]).expect("error parsing lower right corner point");
