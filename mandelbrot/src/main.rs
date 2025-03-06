@@ -23,6 +23,7 @@ fn main() {
     let mut pixels = vec![0; bounds.0 * bounds.1];
 
     // render(&mut pixels, bounds, upper_left, lower_right);
+    //
     let threads = 8;
     let rows_per_band = bounds.1 / threads + 1;
     {
