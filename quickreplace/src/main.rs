@@ -1,7 +1,7 @@
 use text_colorizer::*;
 use std::env;
 use std::fs;
-uew regex::Regex;
+use regex::Regex;
 
 fn main() {
     let args = parse_args();
@@ -54,4 +54,4 @@ fn parse_args() -> Arguments {
     }
 }
 
-fn replace
+// fn replace
