@@ -31,6 +31,7 @@ struct Arguments {
     output: String,
 }
 
+// fn replace(data: &str, target: &str, replacement: &str) -> String {
 fn print_usage() {
     eprintln!("{} - change occurrences of one string into another", "quickreplace".green());
     eprintln!("Usage: quickreplace <target> <replacement> <INPUT> <OUTPUT>");
