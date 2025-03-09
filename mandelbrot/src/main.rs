@@ -9,6 +9,7 @@ fn main() {
     let args: Vec<String> = args().collect();
 
     // rust は、コマンドライン引数の最初の要素はプログラム名であるため、引数の数が5でない場合はエラーメッセージを表示して終了する。
+    // このプログラムは、ファイル名、画像のピクセルサイズ、および画像の上部左隅と下部右隅の座標を受け取る。
     if args.len() != 5 {
         eprintln!("Usage: {} FILE PIXELS UPPERLEFT LOWERRIGHT", args[0]);
         eprintln!("Example: {} mandel.png 1000x750 -1.20,0.35 -1,0.20", args[0]);
