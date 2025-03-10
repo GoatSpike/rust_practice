@@ -53,6 +53,9 @@ fn main() {
 }
 
 // escape_time
+// c: 複素数
+// limit: 最大反復回数
+// 戻り値: 反復回数がlimitを超えた場合はSome(反復回数)を返す。そうでない場合はNoneを返す。
 fn escape_time(c: Complex<f64>, limit: usize) -> Option<usize> {
     let mut z = Complex { re: 0.0, im: 0.0 };
     for i in 0..limit {
