@@ -52,7 +52,7 @@ fn main() {
     write_image(&args[1], &pixels, bounds).expect("error writing PNG file");
 }
 
-
+// escape_time
 fn escape_time(c: Complex<f64>, limit: usize) -> Option<usize> {
     let mut z = Complex { re: 0.0, im: 0.0 };
     for i in 0..limit {
