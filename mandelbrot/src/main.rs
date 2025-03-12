@@ -67,6 +67,7 @@ fn escape_time(c: Complex<f64>, limit: usize) -> Option<usize> {
     None
 }
 
+// parse_pair
 fn parse_pair<T: FromStr>(s: &str, separator: char) -> Option<(T, T)> {
     match s.find(separator) {
         None => None,
