@@ -1,7 +1,6 @@
 use text_colorizer::*;
 use std::env;
 use std::fs;
-use std::result;
 use regex::Regex;
 
 fn main() {
@@ -23,7 +22,7 @@ fn main() {
         }
     };
 
-    match fs::write(&args.output, &) {
+    match fs::write(&args.output, &replaced_data) {
         Ok(_) => (),
         Err(e) => {
             eprintln!("{} failed to write to file '{}': {:?}", "Error:".red().bold(), args.output, e);
