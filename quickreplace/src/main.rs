@@ -68,3 +68,15 @@ fn replace(target: &str, replacement: &str, text: &str) -> Result<String, regex:
     // rap lace_all() returns a Cow<str> which is an owned or borrowed string
     Ok(regex.replace_all(text, replacement).to_string())
 }
+
+fn section3() {
+    let v: Vec<f64> = vec![0.0, 0.707, 1.0, 0.707];
+    let a: [f64; 4] = [0.0, 0.707, 1.0, 0.707];
+
+    let sv: &[f64] = &v;
+    let sa: &[f64] = &a;
+
+    let noodles = "noodles".to_string();
+    let oodles = &noodles[1..];
+    let poodles = "ಠ_ಠ".to_string();
+}
