@@ -79,4 +79,13 @@ fn section3() {
     let noodles = "noodles".to_string();
     let oodles = &noodles[1..];
     let poodles = "ಠ_ಠ".to_string();
+
+    assert_eq!("ಠ_ಠ".len(), 7);
+    assert_eq!("ಠ_ಠ".chars().count(), 3);
+    assert_eq!(oodles, "oodles");
+
+    let bits = vec!["veni", "vidi", "vici"];
+    assert_eq!(bits.concat(), "venividivici");
+    assert_eq!(bits.join(" "), "veni vidi vici");
+
 }
