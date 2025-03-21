@@ -89,5 +89,7 @@ fn section3() {
     assert_eq!(bits.join(" "), "veni vidi vici");
 
     // 403
-
+    let mut s = "The quick brown fox jumps over the lazy dog.".to_string();
+    let word = s.split_whitespace().nth(3).unwrap();
+    assert_eq!(word, "fox");
 }
