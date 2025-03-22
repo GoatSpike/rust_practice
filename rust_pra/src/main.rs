@@ -1,5 +1,6 @@
 use std::env;
 use std::str::FromStr;
+use std::collections::HashMap;
 
 fn main() {
     let mut numbers = Vec::new();
@@ -34,6 +35,29 @@ fn main() {
     let s = vec!["one".to_string(), "two".to_string(), "three".to_string()];
     let t = s;
     let u = s;
+
+    type Table = HashMap<String, Vec<String>>;
+    let mut table = Table::new();
+
+    table.insert("Dazai".to_string(),
+                 vec!["ningen shikkaku".to_string(), "unknown".to_string()]);
+
+    table.insert("Chuuya".to_string(),
+                 vec!["dead apple".to_string(), "unknown".to_string()]);
+
+    table.insert("Akutagawa".to_string(),
+                 vec!["rashoumon".to_string(), "unknown".to_string()]);
+
+    show(&table);
+}
+
+fn show(table: &Table) {
+    for (key, Value) in table {
+        println!("works by {}", key);
+        for v in Value {
+            println!("  {}", v);
+        }
+    }
 }
 
 fn gcd(mut n: u64, mut m: u64) -> u64 {
