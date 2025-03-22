@@ -2,41 +2,44 @@ use std::env;
 use std::str::FromStr;
 use std::collections::HashMap;
 
+type Table = HashMap<String, Vec<String>>;
+
 fn main() {
-    let mut numbers = Vec::new();
+    // let mut numbers = Vec::new();
 
-    for arg in env::args().skip(1) {
-        numbers.push(u64::from_str(&arg)
-        .expect("error parsing argument"));
-        }
+    // for arg in env::args().skip(1) {
+    //     numbers.push(u64::from_str(&arg)
+    //     .expect("error parsing argument"));
+    //     }
 
-        if numbers.len() == 0 {
-            eprintln!("Usage: gcd NUMBER ...");
-            std::process::exit(1);
-        }
-        let mut d = numbers[0];
-        for m in &numbers[1..] {
-            d = gcd(d, *m);
-        }
+    //     if numbers.len() == 0 {
+    //         eprintln!("Usage: gcd NUMBER ...");
+    //         std::process::exit(1);
+    //     }
+    //     let mut d = numbers[0];
+    //     for m in &numbers[1..] {
+    //         d = gcd(d, *m);
+    //     }
 
 
-    println!("The greatest common divisor of {:?} is {}", numbers, d);
+    // println!("The greatest common divisor of {:?} is {}", numbers, d);
 
-    // println!("Hello, world!");
+    println!("Hello, world!");
 
-    // sec3();
+    sec3();
 
-    // sec4();
+    sec4();
 
-    // sec5();
+    sec5();
 
-    // sec6();
+    sec6();
 
     let s = vec!["one".to_string(), "two".to_string(), "three".to_string()];
     let t = s;
-    let u = s;
+    // let u = s; // error: value used here after move
+    println!("t: {:?}", t);
 
-    type Table = HashMap<String, Vec<String>>;
+
     let mut table = Table::new();
 
     table.insert("Dazai".to_string(),
@@ -49,14 +52,28 @@ fn main() {
                  vec!["rashoumon".to_string(), "unknown".to_string()]);
 
     show(&table);
+
+    sort_works(&mut table);
+
+    println!("---sorted---");
+    show(&table);
+
 }
 
+// 共有参照
 fn show(table: &Table) {
-    for (key, Value) in table {
+    for (key, value) in table {
         println!("works by {}", key);
-        for v in Value {
+        for v in value {
             println!("  {}", v);
         }
+    }
+}
+
+// 可変参照
+fn sort_works(table: &mut Table ) {
+    for (_key, value) in table {
+        value.sort();
     }
 }
 
@@ -205,6 +222,9 @@ fn sec5() {
 
     user1.email = String::from("change@ex.com");
     println!("user1 {:?}", user1);
+    println!("user1.username {:?}", user1.username);
+    println!("user1.active {:?}", user1.active);
+    println!("user1.sign_in_count {:?}", user1.sign_in_count);
 
     let rect1 = Rectangle {
         width: 30,
@@ -249,6 +269,8 @@ fn sec6() {
         kind: IpAddrKind::V4,
         address: String::from("127.0.0.1"),
     };
+    println!("kind {:?}", home.kind);
+    println!("address {}", home.address);
 
     let loopback = IpAddr {
         kind: IpAddrKind::V6,
