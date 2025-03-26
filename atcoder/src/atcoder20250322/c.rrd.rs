@@ -7,6 +7,7 @@ fn main() {
     numbers: [usize; n],
   }
 
+  // Create a hashmap to store the indices of the numbers
   let mut d: HashMap<usize, Vec<usize>> = HashMap::new();
 
   // Populate the hashmap with list indices
@@ -18,6 +19,7 @@ fn main() {
   let mut keys: Vec<&usize> = d.keys().collect();
   keys.sort_by(|a, b| b.cmp(a));
 
+  // Find the first key with a value list of length 1
   for &key in keys {
     if d[&key].len() == 1 {
       println!("{}", d[&key][0] + 1);
