@@ -20,6 +20,7 @@ fn main() {
   keys.sort_by(|a, b| b.cmp(a));
 
   // Find the first key with a value list of length 1
+  // Print the index + 1
   for &key in keys {
     if d[&key].len() == 1 {
       println!("{}", d[&key][0] + 1);
