@@ -13,6 +13,7 @@ fn main() {
     result = -1;
   }
 
+  // println!("{} {}", result, check);
   println!("{}", result);
 
 }
